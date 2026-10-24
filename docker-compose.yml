@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  ledger:
+    image: postgres:16-alpine
+    container_name: celesto_ledger
+    environment:
+      POSTGRES_USER: ledger
+      POSTGRES_PASSWORD: ledger
+      POSTGRES_DB: ledger
+    volumes:
+      - ./seeds:/docker-entrypoint-initdb.d:ro
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ledger -d ledger"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+    restart: unless-stopped
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: celesto_api
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./reports:/app/reports:ro
+      - ./logs:/app/logs:ro
+    environment:
+      - API_PORT=8080
+      - DATABASE_URL=postgresql://ledger:ledger@ledger:5432/ledger
+      - CELESTO_PROVIDER=cloud
+      - CELESTO_API_KEY=replace-me
+      - CELESTO_BACKEND=firecracker
+      - LLM_BASE_URL=https://example-llm-host/v1
+      - LLM_API_KEY=replace-me
+      - LLM_MODEL=replace-with-a-model-name
+    depends_on:
+      ledger:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -f http://localhost:8080/health || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+    restart: unless-stopped

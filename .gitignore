@@ -1,0 +1,18 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.pytest_cache/
+
+# Sensitive environment files
+.env
+*.local.env
+
+# OS artifacts
+.DS_Store
+Thumbs.db

@@ -1,0 +1,23 @@
+{"ts": "2026-10-24T06:12:00.010Z", "step": 1, "event": "step_started", "name": "boot_probe"}
+{"ts": "2026-10-24T06:12:00.450Z", "step": 1, "event": "step_completed"}
+{"ts": "2026-10-24T06:12:00.455Z", "step": 2, "event": "step_started", "name": "apply_network_policy"}
+{"ts": "2026-10-24T06:12:00.520Z", "step": 2, "event": "step_completed"}
+{"ts": "2026-10-24T06:12:00.525Z", "step": 3, "event": "step_started", "name": "register_safety_hooks"}
+{"ts": "2026-10-24T06:12:00.580Z", "step": 3, "event": "step_completed"}
+{"ts": "2026-10-24T06:12:00.585Z", "step": 4, "event": "step_started", "name": "unpack_target"}
+{"ts": "2026-10-24T06:12:00.670Z", "step": 4, "event": "step_completed"}
+{"ts": "2026-10-24T06:12:00.675Z", "step": 5, "event": "step_started", "name": "static_ast_analysis"}
+{"ts": "2026-10-24T06:12:00.790Z", "step": 5, "event": "step_completed"}
+{"ts": "2026-10-24T06:12:00.795Z", "step": 6, "event": "step_started", "name": "create_snapshot"}
+{"ts": "2026-10-24T06:12:00.950Z", "step": 6, "event": "step_completed", "snapshot_id": "snapshot-pre-detonation"}
+{"ts": "2026-10-24T06:12:00.955Z", "step": 7, "event": "step_started", "name": "dynamic_detonation"}
+{"ts": "2026-10-24T06:12:01.350Z", "step": 7, "event": "step_failed", "error": "DetonationFault: Untrusted payload triggered guest panic / corrupted disk state", "status": "MidTaskFailure"}
+{"ts": "2026-10-24T06:12:01.360Z", "step": 7, "event": "policy_applied", "policy": "rollback", "rationale": "Restoring clean snapshot baseline taken at step 6 to eliminate corrupted state."}
+{"ts": "2026-10-24T06:12:01.520Z", "step": 7, "event": "recovery_executed", "policy": "rollback", "restored_snapshot": "snapshot-pre-detonation"}
+{"ts": "2026-10-24T06:12:01.525Z", "step": 8, "event": "step_started", "name": "quarantine_verification"}
+{"ts": "2026-10-24T06:12:01.620Z", "step": 8, "event": "step_completed"}
+{"ts": "2026-10-24T06:12:01.625Z", "step": 9, "event": "step_started", "name": "synthesize_report"}
+{"ts": "2026-10-24T06:12:01.710Z", "step": 9, "event": "step_completed"}
+{"ts": "2026-10-24T06:12:01.715Z", "step": 10, "event": "step_started", "name": "finalize_ledger"}
+{"ts": "2026-10-24T06:12:01.790Z", "step": 10, "event": "step_completed"}
+{"ts": "2026-10-24T06:12:01.810Z", "step": 10, "event": "sandbox_cleaned_up", "sandbox_name": "sbx-failstep07", "state": "deleted"}

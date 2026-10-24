@@ -1,0 +1,6 @@
+{
+  "who": "DevSecOps engineers and autonomous agent platform operators evaluating untrusted third-party dependencies and skills.",
+  "agent_work": "Executes suspicious code packages and untrusted task scripts inside isolated Celesto microVMs under strict network policies and safety hooks to detect exfiltration and destructive behavior.",
+  "proof_output": "Structured security audit risk report with execution telemetry, blocked exfiltration attempts, and signed integrity hash.",
+  "idea_source": "idea_bank"
+}

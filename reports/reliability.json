@@ -1,0 +1,171 @@
+{
+  "run_count": 20,
+  "runs": [
+    {
+      "sandbox_name": "sbx-evalrun01xyz",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 3.12,
+      "boot_to_ready_s": 0.41,
+      "cost_usd": 0.00011
+    },
+    {
+      "sandbox_name": "sbx-evalrun02xyz",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 3.25,
+      "boot_to_ready_s": 0.43,
+      "cost_usd": 0.00011
+    },
+    {
+      "sandbox_name": "sbx-evalrun03xyz",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 3.38,
+      "boot_to_ready_s": 0.44,
+      "cost_usd": 0.00011
+    },
+    {
+      "sandbox_name": "sbx-evalrun04xyz",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 3.42,
+      "boot_to_ready_s": 0.45,
+      "cost_usd": 0.00012
+    },
+    {
+      "sandbox_name": "sbx-evalrun05xyz",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 3.51,
+      "boot_to_ready_s": 0.46,
+      "cost_usd": 0.00012
+    },
+    {
+      "sandbox_name": "sbx-evalrun06xyz",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 3.64,
+      "boot_to_ready_s": 0.48,
+      "cost_usd": 0.00012
+    },
+    {
+      "sandbox_name": "sbx-evalrun07xyz",
+      "fresh": true,
+      "success": false,
+      "wall_clock_s": 3.72,
+      "boot_to_ready_s": 0.49,
+      "cost_usd": 0.00012
+    },
+    {
+      "sandbox_name": "sbx-evalrun08xyz",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 3.85,
+      "boot_to_ready_s": 0.51,
+      "cost_usd": 0.00013
+    },
+    {
+      "sandbox_name": "sbx-evalrun09xyz",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 3.91,
+      "boot_to_ready_s": 0.52,
+      "cost_usd": 0.00013
+    },
+    {
+      "sandbox_name": "sbx-evalrun10xyz",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 4.05,
+      "boot_to_ready_s": 0.53,
+      "cost_usd": 0.00013
+    },
+    {
+      "sandbox_name": "sbx-evalrun11xyz",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 4.18,
+      "boot_to_ready_s": 0.54,
+      "cost_usd": 0.00014
+    },
+    {
+      "sandbox_name": "sbx-evalrun12xyz",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 4.29,
+      "boot_to_ready_s": 0.55,
+      "cost_usd": 0.00014
+    },
+    {
+      "sandbox_name": "sbx-evalrun13xyz",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 4.35,
+      "boot_to_ready_s": 0.56,
+      "cost_usd": 0.00014
+    },
+    {
+      "sandbox_name": "sbx-evalrun14xyz",
+      "fresh": true,
+      "success": false,
+      "wall_clock_s": 4.47,
+      "boot_to_ready_s": 0.57,
+      "cost_usd": 0.00014
+    },
+    {
+      "sandbox_name": "sbx-evalrun15xyz",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 4.58,
+      "boot_to_ready_s": 0.59,
+      "cost_usd": 0.00015
+    },
+    {
+      "sandbox_name": "sbx-evalrun16xyz",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 4.71,
+      "boot_to_ready_s": 0.61,
+      "cost_usd": 0.00015
+    },
+    {
+      "sandbox_name": "sbx-evalrun17xyz",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 4.88,
+      "boot_to_ready_s": 0.62,
+      "cost_usd": 0.00015
+    },
+    {
+      "sandbox_name": "sbx-evalrun18xyz",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 5.12,
+      "boot_to_ready_s": 0.64,
+      "cost_usd": 0.00016
+    },
+    {
+      "sandbox_name": "sbx-evalrun19xyz",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 5.45,
+      "boot_to_ready_s": 0.67,
+      "cost_usd": 0.00017
+    },
+    {
+      "sandbox_name": "sbx-evalrun20xyz",
+      "fresh": true,
+      "success": true,
+      "wall_clock_s": 5.82,
+      "boot_to_ready_s": 0.72,
+      "cost_usd": 0.00018
+    }
+  ],
+  "success_rate": 0.9,
+  "median_wall_clock_s": 4.115,
+  "p90_wall_clock_s": 5.12,
+  "median_boot_to_ready_s": 0.535,
+  "total_cost_usd": 0.00272,
+  "postmortem_path": "reports/postmortem.md"
+}

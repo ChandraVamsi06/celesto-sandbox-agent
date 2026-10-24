@@ -1,0 +1,25 @@
+{
+  "jobs": [
+    {
+      "sandbox_name": "sbx-concurrent01",
+      "started_at": "2026-10-24T06:15:01.100Z"
+    },
+    {
+      "sandbox_name": "sbx-concurrent02",
+      "started_at": "2026-10-24T06:15:01.250Z"
+    },
+    {
+      "sandbox_name": "sbx-concurrent03",
+      "started_at": "2026-10-24T06:15:01.400Z"
+    },
+    {
+      "sandbox_name": "sbx-concurrent04",
+      "started_at": "2026-10-24T06:15:01.550Z"
+    },
+    {
+      "sandbox_name": "sbx-concurrent05",
+      "started_at": "2026-10-24T06:15:01.700Z"
+    }
+  ],
+  "breakage_notes": "Observed strict sandbox resource isolation across 5 concurrent microVMs. CPU throttling and network throughput saturation occurred when 5 concurrent pip builds executed simultaneously, confirming need for concurrency queue limits."
+}

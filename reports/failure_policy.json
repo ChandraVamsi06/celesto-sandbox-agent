@@ -1,0 +1,7 @@
+{
+  "failed_step": 7,
+  "total_steps": 10,
+  "policy": "rollback",
+  "rationale": "When step 7 encounters an unexpected mid-task failure during untrusted package detonation, the rollback policy immediately restores the pre-execution snapshot taken at step 6. This eliminates dirty filesystem mutations, prevents state pollution across remaining audit phases, and avoids the cold-boot latency overhead of starting a fresh microVM.",
+  "trace_path": "reports/failure_trace.jsonl"
+}

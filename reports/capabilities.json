@@ -1,0 +1,19 @@
+{
+  "capabilities": [
+    {
+      "id": "safety_hooks",
+      "why": "Safety hooks inspect and intercept dangerous agent commands before they reach the guest kernel, blocking malicious payload execution, credential exfiltration, and unauthorized privilege escalation in real time.",
+      "evidence_path": "src/agent/safety.py"
+    },
+    {
+      "id": "network_policy",
+      "why": "Hardware-enforced network policy isolates the microVM from outbound internet access by default, preventing prompt-injected exfiltration payloads from leaking environment variables or sensitive files to external command-and-control servers.",
+      "evidence_path": "src/agent/network.py"
+    },
+    {
+      "id": "snapshots",
+      "why": "MicroVM point-in-time snapshots capture complete CPU, memory, and filesystem state before risky execution steps, allowing sub-second rollback to a verified clean baseline when step 7 of 10 encounters mid-task failure without requiring a cold reboot.",
+      "evidence_path": "src/agent/snapshot_manager.py"
+    }
+  ]
+}
